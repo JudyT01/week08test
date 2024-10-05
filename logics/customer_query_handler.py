@@ -1,7 +1,7 @@
 import os
 import json
 import openai
-from helper_functions import llm
+#from helper_functions import llm
 
 category_n_course_name = {'Programming and Development': ['Web Development Bootcamp',
                                                           'Introduction to Cloud Computing',
