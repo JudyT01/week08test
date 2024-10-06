@@ -12,7 +12,8 @@ st.set_page_config(
 )
 # endregion <--------- Streamlit App Configuration --------->
 
-st.title("Streamlit App")
+st.title("Dear citizen, welcome to your Medishield and Medisave information assistant. \n
+How can I help you navigate your healthcare planning today? Your well-being is important to us!")
 
 # Check if the password is correct.  
 if not check_password():  
@@ -37,3 +38,10 @@ if form.form_submit_button("Submit"):
     print(course_details)
     df = pd.DataFrame(course_details)
     df 
+
+with st.expander("Disclaimer"): 
+    st.write("IMPORTANT NOTICE: This web application is a prototype developed for educational purposes only. \n
+    The information provided here is NOT intended for real-world usage and should not be relied upon for making any decisions, \n
+    especially those related to financial, legal, or healthcare matters.Furthermore, please be aware that the LLM may generate \n
+    inaccurate or incorrect information. You assume full responsibility for how you use any generated output. Always consult with \n
+    qualified professionals for accurate and personalized advice.")
